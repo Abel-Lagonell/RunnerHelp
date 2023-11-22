@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Runner\'s Help</string>
+    <string name="start_vibrate">Start Vibrate</string>
+    <string name="stop_vibrate">Stop Vibrate</string>
+    <string name="enter_bpm">BPM:</string>
+    <string name="start_run">Start Run</string>
+    <string name="stop_run">Stop Run</string>
+    <string name="km">min/km</string>
+    <string name="record_data">Save Data</string>
+    <string name="send_data">Send Data</string>
+    <string name="trash">Trash the Pace Data</string>
+</resources>
