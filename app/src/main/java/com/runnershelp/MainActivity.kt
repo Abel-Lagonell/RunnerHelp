@@ -145,6 +145,7 @@ class MainActivity : ComponentActivity() {
         builder.setTitle("Delete Pace Data?")
         builder.setPositiveButton("Yes"){dialog, _ ->
             paceAdapter.deletePace()
+            locationListener.clearDistances()
             Toast.makeText(this, "Deleted Pace Current Pace Data", Toast.LENGTH_SHORT).show()
             dialog.dismiss()
         }
@@ -182,7 +183,6 @@ class MainActivity : ComponentActivity() {
             val fileName = editText.text.toString().trim() + type
             if (fileName.isNotEmpty()) {
                 makeFile(fileName, locationListener.getPacesSeconds())
-                Log.d("Path to file", applicationContext.filesDir.toString())
             } else {
                 makeFile("Pace_data", locationListener.getPacesSeconds())
             }

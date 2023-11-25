@@ -1,5 +1,6 @@
 package com.runnershelp
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -44,10 +45,9 @@ class PaceAdapter(
     }
 
     fun deletePace() {
-        for (i in paces.indices) {
-            paces.removeAt(paces.size - 1)
-            notifyItemRemoved(paces.size - 1)
-        }
+        paces.clear()
+        notifyDataSetChanged()
+
     }
 
     fun empty():Boolean{
