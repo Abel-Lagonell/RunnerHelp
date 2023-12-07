@@ -46,10 +46,10 @@ for item in sd_array:
 x_values = [item[0] for item in sd_array]
 y_values = [item[1] for item in sd_array]
 
-fig = plt.figure(figsize=(11, 5))
+fig = plt.figure(figsize=(5, 6))
 
 # Create a horizontal bar chart
-plt.barh(x_values, y_values)
+plt.bar(x_values, y_values)
 
 # Add labels and title
 plt.xlabel("Standard Deviation")
